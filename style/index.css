@@ -1,0 +1,489 @@
+section {
+  padding: 12rem 0;  
+  overflow-x: hidden;
+}
+
+.section__header {
+  text-align: center;
+}
+
+.section__header h4 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Hero section _______________________________________*/
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(
+    var(--color-gray-0), 
+    var(--color-gray-100)
+  );
+}
+
+body.dark .hero {
+  background: linear-gradient(
+    var(--color-gray-200), 
+    var(--color-gray-0)
+  );
+}
+
+.hero .container {
+  text-align: center;
+}
+
+.hero__content {
+  width: 50%;
+  margin-inline: auto;
+}
+
+.hero__content p {
+  margin-top: 0.5rem;
+}
+
+.hero__cta {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__images {
+  width: fit-content;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4rem;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.hero__image {
+  width: 14rem;
+  height: 25rem;
+  border-radius: 7rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 0 var(--color-gray-200);
+  transition: var(--transition);
+}
+
+.hero__image:hover {
+  box-shadow: none;
+}
+
+.hero__image:first-child,
+.hero__image:last-child {
+  transform: translateY(-8rem);
+}
+
+.hero__image:nth-child(3) {
+  transform: translateY(8rem);
+}
+
+/* About section _______________________________________*/
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+
+.about__left {
+  border-radius: 7rem;
+  overflow: hidden;
+  box-shadow: 0 2rem 0 var(--color-gray-100);
+  transition: var(--transition);
+}
+
+.about__left:hover {
+  box-shadow: none;
+}
+
+.about .section__header {
+  text-align: left;
+}
+
+.about .container a {
+  margin-top: 2rem;
+}
+
+.about__right p,
+.about .container h1 {
+  margin-bottom: 1rem;
+}
+
+
+/* Our Programs section _______________________________________*/
+.our-programs {
+  background: var(--color-gray-0);
+}
+
+.our-programs__list {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,
+   minmax(15rem, 1fr));
+   gap: 4rem;
+}
+
+.our-programs__item {
+  background: var(--color-gray-50);
+  height: 28rem;
+  border-radius: var(--radius-6);
+  overflow: hidden;
+  box-shadow: 0 1rem 0 var(--color-gray-100);
+  transition: var(--transition);
+}
+
+.our-programs__item:hover {
+  box-shadow: none;
+  transform: scale(1.05);
+}
+
+.our-programs__item img {
+  height: 20rem; 
+  border-radius: 3rem;
+  box-shadow: 0 1rem 0 var(--color-gray-0);
+}
+
+
+.our-programs__item-content {
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.our-programs__item a {
+  display: inline-block;
+  color: var(--color-primary);
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.our-programs__item:hover a {
+  background: var(--color-gray-0);
+  padding: 0.3rem 1.5rem;
+  border-radius: var(--radius-1);
+}
+
+.our-programs__item a:hover {
+  background: var(--color-gray-900);
+}
+
+
+/* Why Us section _______________________________________*/
+.why-us .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.why-us__left h4 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.why-us__left p {
+  margin: 0.5rem 0 2.5rem
+}
+
+.why-us__right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.why-us__item {
+  background: var(--color-gray-0);
+  padding: 2rem;
+  border-radius: var(--radius-6);
+  text-align: center;
+  box-shadow: 0 1rem 0 var(--color-gray-100);
+  transition: var(--transition);
+}
+
+.why-us__item:hover {
+  box-shadow: none;
+}
+
+.why-us__item span {
+  background: var(--color-primary);
+  width: 4.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 1.5rem;
+  color: var(--color-gray-0);
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+}
+
+.why-us__item:nth-child(2) span {
+  background: var(--color-danger);
+}
+
+.why-us__item:nth-child(3) span {
+  background: var(--color-success);
+}
+
+.why-us__item:nth-child(4) span {
+  background: var(--color-gray-700);
+}
+
+.why-us__item h4 {
+  margin: 2rem 0 0.6rem;
+}
+
+/* Our Process section _______________________________________*/
+.our-process {
+  background: var(--color-gray-0);
+  text-align: center;
+}
+
+.our-process h4 {
+  color: var(--color-primary);
+}
+
+.our-process__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-top: 7rem;
+}
+
+.our-process__item {
+  background: var(--color-gray-700);
+  color: var(--color-gray-100);
+  padding: 3rem 2rem;
+  border-radius: var(--radius-6);
+  box-shadow: 0 1rem 0 var(--color-gray-100);
+  position: relative;
+}
+
+.our-process__item:hover {
+  box-shadow: none;
+} 
+
+.our-process__item:nth-child(1) {
+  background: var(--color-success);
+}
+
+.our-process__item:nth-child(2) {
+  background: var(--color-danger);
+}
+
+.our-process__item h4 {
+  color: var(--color-gray-0);
+  margin: 2rem 0 0.5rem;
+}
+
+.our-process__item span {
+  font-size: 2.5rem;
+  color: var(--color-gray-0);
+  display: inline-block;
+}
+
+.our-process__item h2 {
+  position: absolute;
+  top: -2rem;
+  left: 5rem;
+  background: var(--color-gray-0);
+  width: 4.5rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-4);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0.5rem 0 var(--color-gray-100);
+}
+
+/* Our Packages section _______________________________________*/
+.packages__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+  margin: 4rem auto 2rem;
+}
+
+.packages__buttons button {
+  background: var(--color-gray-0);
+  color: var(--color-gray-900);
+  border-radius: var(--radius-3);
+  padding: 1.5rem 3rem;
+  box-shadow: 0 0.7rem 0 var(--color-gray-100);
+}
+
+.packages__buttons button.active {
+  background: var(--color-primary);
+  color: var(--color-gray-0);
+}
+
+.packages__buttons button:hover {
+  background: var(--color-gray-900);
+  color: var(--color-gray-0);
+  box-shadow: none;
+}
+
+table {
+  width: 100%;
+}
+
+thead th{
+  padding: 1rem;
+  text-align: left;
+}
+
+tbody td {
+  padding: 1rem;
+}
+
+tbody tr {
+  animation: identifier 1s ease forwards;
+}
+
+tbody tr:nth-child(odd) {
+  background: var(--color-gray-0);
+}
+
+/* Animation For Packages Change ________________________*/
+@keyframes identifier {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Testimonials section _______________________________________*/
+.testimonials {
+  background: var(--color-gray-0);
+}
+
+.swiper-wrapper {
+  margin-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.swiper-slide {
+  background: var(--color-gray-50);
+  padding: 2rem 2.5rem;
+  border-radius: var(--radius-6);
+  box-shadow: 0 1.2rem 0 var(--color-gray-100);
+  transition: var(--transition);
+}
+
+.swiper-slide:hover {
+  box-shadow: none;
+}
+
+.testimonial__client {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.testimonial__client-image {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-3);
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-gray-900);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
+
+/* Media Queries (small screen) _______________________________________*/
+@media screen and (max-width: 600px) {
+  section {
+    padding: 7rem 0;
+  }
+
+  .hero {
+    padding-top: 8.5rem;
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+
+  .hero__images {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 3.5rem;
+  }
+
+  .hero__image {
+    border-radius: var(--radius-5);
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .hero__image:nth-child(odd) {
+    display: none;
+  }
+
+  .hero__cta {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .about .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about__left {
+    border-radius: 3rem;
+    box-shadow: none;
+  }
+
+  .our-programs__item {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .why-us .container {
+    grid-template-columns: 1fr;
+  }
+
+  .why-us__right {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 20rem);
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .our-process__list {
+    grid-template-columns: 1fr;
+  }
+
+  .packages__buttons {
+    flex-direction: column;
+  }
+
+  .packages tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .packages td,
+  .packages th {
+    padding: 0.7rem;
+  }
+
+  .testimonials header {
+    text-align: center;
+  }
+
+  .swiper-wrapper {
+    margin-top: 2rem;
+  }
+}
