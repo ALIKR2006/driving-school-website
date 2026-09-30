@@ -1,0 +1,97 @@
+/* page Header _____________________________________________*/
+.page__header {
+  background: url(/assets/graduate7.avif) center center/cover;
+}
+
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  padding: 3rem 0;
+  margin-bottom: 5rem;
+}
+
+.about__image {
+  height: 30rem;
+  border-radius: 7rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 0 var(--color-gray-100);
+  transition: var(--transition);
+}
+
+.about__image:hover {
+  box-shadow: none;
+}
+
+.about__story h2 span {
+  color: var(--color-primary);
+}
+
+.about__story p {
+  margin-top: 1rem;
+}
+
+
+/* Instructors _____________________________________________*/
+.instructors {
+  background: var(--color-gray-0);
+  padding: 8rem 0;
+}
+
+.instructors .container {
+  text-align: center;
+}
+
+.instructors__list {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 5rem;
+}
+
+.instructor {
+  background: var(--color-gray-0);
+  border-radius: var(--radius-6);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 1rem var(--color-gray-300);
+  transition: var(--transition);
+}
+
+.instructor:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem var(--color-gray-300);
+}
+
+.instructor__image {
+  height: 17rem;
+  overflow: hidden;
+  border-radius: 3rem;
+}
+
+.instructor h4 {
+  margin: 1.5rem 0 0.6rem;
+}
+
+.instructor p {
+  padding-bottom: 2rem;
+}
+
+/* Medi Queries (small screen) _________________________________*/
+@media screen and (max-width: 600px) {
+  .about .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about__image {
+    border-radius: var(--radius-6);
+    box-shadow: none;
+  }
+
+  .instructors__list {
+    gap: 2.4rem;
+    width: 80%;
+    margin-inline: auto;
+  }
+}
