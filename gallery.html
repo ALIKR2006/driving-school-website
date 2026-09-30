@@ -13,7 +13,7 @@
   />
   <!-- Custom css-->
   <link rel="stylesheet" href="/style/general.css">
-  <link rel="stylesheet" href="/style/about-us.css">
+  <link rel="stylesheet" href="/style/gallery.css">
 
   <title>Document</title>
 </head>
@@ -40,23 +40,95 @@
       </div>
     </nav>
   </header>
-  
+
   <!-- Page Header -->
   <header class="page__header">
     <div class="page__header-content">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti 
-        rerum nobis voluptatum odit aperiam in inventore incidunt necessitatibus 
-        saepe nisi similique sequi nesciunt, illum expedita, ipsam dolorum cum 
-        exercitationem molestias!
-      </p>
+      <h2>Our Gallery</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
     </div>
   </header>
-
   
+  <!-- Gallery-main section -->
+   <section class="gallery">
+    <div class="container">
+      <menu class="gallery__filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter=".graduates">Category A</button>
+        <button data-filter=".practicals">Category B</button>
+        <button data-filter=".theories">Category C</button>
+      </menu>
+      <ul class="gallery__images">
+        <li class="mix graduates" data-order="1">
+          <img src="assets/graduate1.jpg" alt="">
+        </li>
+
+        <li class="mix theories" data-order="2">
+          <img src="assets/theory1.webp" alt="">
+        </li>
+
+        <li class="mix theories" data-order="3">
+          <img src="assets/theory2.jpg" alt="">
+        </li>
+
+        <li class="mix practicals" data-order="4">
+          <img src="assets/practical1.jpg" alt="">
+        </li>
+
+        <li class="mix theories" data-order="5">
+          <img src="assets/theory3.jpg" alt="">
+        </li>
+
+        <li class="mix practicals" data-order="6">
+          <img src="assets/practical2.jpg" alt="">
+        </li>
+
+        <li class="mix graduates" data-order="7">
+          <img src="assets/graduate2.webp" alt="">
+        </li>
+
+        <li class="mix practicals" data-order="8">
+          <img src="assets/practical3.jpg" alt="">
+        </li>
+
+        <li class="mix practicals" data-order="9">
+          <img src="assets/practical4.jpg" alt="">
+        </li>
+
+        <li class="mix graduates" data-order="10">
+          <img src="assets/graduate3.jpg" alt="">
+        </li>
+
+        <li class="mix theories" data-order="11">
+          <img src="assets/theory4.jpg" alt="">
+        </li>
+
+        <li class="mix graduates" data-order="12">
+          <img src="assets/graduate5.jpg" alt="">
+        </li>
+
+        <li class="mix graduates" data-order="13">
+          <img src="assets/graduate6.jpg" alt="">
+        </li>
+
+        <li class="mix practicals" data-order="14">
+          <img src="assets/practical7.jpg" alt="">
+        </li>
+
+        <li class="mix theories" data-order="15">
+          <img src="assets/theory5.webp" alt="">
+        </li>
+
+        <li class="mix practicals" data-order="16">
+          <img src="assets/practical6.jpg" alt="">
+        </li>
+
+      </ul>
+    </div>
+   </section>
 
   <!-- footer -->
-    <footer>
+  <footer>
     <div class="container">
       <menu class="footer__menu">
         <a href="#">Privacy</a>
@@ -72,8 +144,25 @@
     <small class="footer__copyright">
       &copy; 2026 Tutorials. All Rights reserved.
     </small>
-    </footer>
+  </footer>
 
-    <script src="/js/main.js"></script>
+          
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" 
+    integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script>
+    const containerEl = document.querySelector('.gallery__images');
+    var mixer = mixitup(containerEl, {
+      selectors: {
+        target: '.mix'
+      },
+      animation: {
+        duration: 300
+      }
+    });
+  </script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
