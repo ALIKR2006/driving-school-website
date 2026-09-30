@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconscout CDN-->
+    <link rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
+    />
+    <!-- Swiper js-->
+      <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    <!-- Custom css-->
+    <link rel="stylesheet" href="/style/general.css">
+    <link rel="stylesheet" href="/style/faqs.css">
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="container">
+          <a href="index.html" class="nav__logo">EGATOR</a>
+          <ul class="nav__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="faqs.html" class="active">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="nav__buttons">
+            <button class="theme-btn"><i class="uil uil-moon"></i></button>
+            <button class="nav__menu-open"><i class="uil uil-bars"></i></button>
+            <button class="nav__menu-close"><i class="uil uil-multiply"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Page Header -->
+     <header class="page__header">
+      <div class="page__header-content">
+        <h2>Frequently Asked Questions</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quas 
+          nobis. Quibusdam voluptates quisquam enim.
+        </p>
+      </div>
+     </header>
+    
+     <!-- FAQs-main section -->
+      <menu class="container faqs">
+        <article class="faq">
+          <div class="faq__head">
+            <h5>Will you arrange a driver's license for me?</h5>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p>
+            Yes, we start processing your license right from the 
+            day we present you to DVLA for your learner's license.
+          </p>
+        </article>
+
+        <article class="faq">
+          <div class="faq__head">
+            <h5>Is it compulsory that i go to DVLA for the test?</h5>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p>
+            Yes. It is only DVLA thet can issue a vallid driving license for students 
+            drivers. Therefore, the theory and practical tests are compulsory.
+          </p>
+        </article>
+
+        <article class="faq">
+          <div class="faq__head">
+            <h5>How long is the duration of the program?</h5>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p>
+            the regular packages last 6 weeks. the express last 3weeks 
+            and polishing last 4 weeks.
+          </p>
+        </article>
+
+        <article class="faq">
+          <div class="faq__head">
+            <h5>do i need to through the theory license?</h5>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p>
+            Yes. It is mandated by DVLA that students drivers go through 
+            12 topics on defensive driving before obtaining a learners license.  
+          </p>
+        </article>
+
+        <article class="faq">
+          <div class="faq__head">
+            <h5>Do you have a shorter period of completion?</h5>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p>
+            The shortest completion period we have is 3 week and that is the express course.
+          </p>
+        </article>
+
+        <article class="faq">
+          <div class="faq__head">
+            <h5>I can drive. Can i get a drivers license only?</h5>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p>
+            Yes. You can.
+          </p>
+        </article>
+
+        <article class="faq">
+          <div class="faq__head">
+            <h5>I know how to drive nut i am not very good. how can you help?</h5>
+            <i class="uil uil-angle-down"></i>
+          </div>
+          <p>
+            You'll have to opt for the polishing/refreshers program.
+          </p>
+        </article>
+
+        <a href="mailto:youremail@gmail.com" class="btn btn-primary" 
+          target="_blank">Have more Questions?
+        </a>
+      </menu>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <menu class="footer__menu">
+          <a href="#">Privacy</a>
+          <a href="#">Terms of use</a>
+          <a href="#">oder interest</a>
+        </menu>
+        <menu class="footer__social">
+          <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+          <a href="#" target="_blank"><i class="uil uil-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+        </menu>
+      </div>
+      <small class="footer__copyright">
+        &copy; 2026 Tutorials. All Rights reserved.
+      </small>
+    </footer>
+
+            
+
+    <script>
+      const faqs = document.querySelectorAll('.faq');
+      faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+          faq.classList.toggle('show');
+          if(faq.classList.contains('show')) {
+            faq.querySelector('i').className = "uil uil-angle-up";
+          } else {
+            faq.querySelector('i').className = "uil uil-angle-down";
+          }
+        })
+      });
+    </script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
