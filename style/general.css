@@ -233,7 +233,7 @@ nav .container {
 /* Page Header ___________________________________________*/
 .page__header {
   height: 15rem;
-  background: url(assets/header.jpg) center center/cover;
+  background: url(../assets/header.jpg) center center/cover;
   display: grid;
   place-items: center;
   margin: 4rem 0;
