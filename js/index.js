@@ -13,6 +13,9 @@
         }
       });
 
+// Initialize Animate On Scroll(AOS) Library ______________________________________
+AOS.init();
+
 // Packages Toggle ____________________________________________________________________________
 const packagesButtons = document.querySelectorAll('.packages__buttons button');
 const packagesTableBody = document.querySelector('.packages .table-body');

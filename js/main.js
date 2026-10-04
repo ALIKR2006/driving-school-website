@@ -14,3 +14,28 @@ navMenuclose.addEventListener('click', () => {
   navMenuclose.style.display = 'none';
 })
 
+
+const themeBtn = document.querySelector('.theme-btn');
+themeBtn.addEventListener('click', () => {
+  if(document.body.className === 'dark') {
+    document.body.className = '';
+    themeBtn.innerHTML = `<i class="uil uil-moon"></i>`;
+    localStorage.setItem('driving-school-theme', '');
+  } else {
+    document.body.className = 'dark';
+    themeBtn.innerHTML = `<i class="uil uil-sun"></i>`;
+    localStorage.setItem('driving-school-theme', 'dark');
+  }
+});
+
+
+
+window.addEventListener('load', () => {
+  document.body.className = localStorage.getItem('driving-school-theme') || '';
+  if (localStorage.getItem('driving-school.theme') === '') {
+    themeBtn.innerHTML = `<i class="uil uil-moon"></i>`;
+  } else {
+    themeBtn.innerHTML = `<i class="uil uil-sun"></i>`;
+  }
+});
+

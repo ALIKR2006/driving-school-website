@@ -24,7 +24,10 @@
 .program.active {
   background: var(--color-gray-900);
   box-shadow: 0 0.7rem 0 var(--color-primary);
-  color: white;
+
+  & p {
+    color: var(--color-gray-0);
+  }
 }
 
 
@@ -42,6 +45,7 @@
 }
 
 .program__info p {
+  color: var(--color-gray-900);
   font-size: 0.85rem;
   margin: 0.8rem 0 1.3rem;
 }

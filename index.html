@@ -9,14 +9,20 @@
     <link rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
     />
+
     <!-- Swiper js-->
      <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
     />
 
+    <!-- Animate On scroll Library CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Custom css-->
     <link rel="stylesheet" href="style/general.css" />
     <link rel="stylesheet" href="style/index.css" />
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+
   </head>
   <body>
     <!-- Header -->
@@ -44,7 +50,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <article class="hero__content">
+        <article class="hero__content" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
           <h1>Your one step <br>hands-on driving school</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, velit aliquam? Quidem 
             voluptatum adipisci repudiandae itaque, repellendus labore debitis maxime hic, 
@@ -56,7 +62,7 @@
           </div>
         </article>
 
-        <article class="hero__images">
+        <article class="hero__images" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
           <div class="hero__image">
             <img src="/assets/theory1.webp" alt="">
           </div>
@@ -79,10 +85,10 @@
     <!-- About Section -->
     <section class="about">
       <div class="container">
-        <article class="about__left">
+        <article class="about__left" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
           <img src="assets/practical7.jpg" alt="">
         </article>
-        <article class="about__right">
+        <article class="about__right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
           <header class="section__header">
             <h4>About Us</h4>
             <h1>Who Are We?</h1>
@@ -112,7 +118,8 @@
           <h1>difrent Programs For You</h1>
         </header>
         <ul class="our-programs__list">
-          <li class="our-programs__item">
+          <li class="our-programs__item"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
             <img src="assets/theory3.jpg" alt="">
             <div class="our-programs__item-content">
               <h4>Regular Learning</h4>
@@ -120,7 +127,8 @@
             </div>
           </li>
 
-          <li class="our-programs__item">
+          <li class="our-programs__item"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <img src="assets/graduate7.avif" alt="">
             <div class="our-programs__item-content">
               <h4>Express Lerning</h4>
@@ -128,7 +136,8 @@
             </div>
           </li>
 
-          <li class="our-programs__item">
+          <li class="our-programs__item"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
             <img src="assets/practical8.jpeg" alt="">
             <div class="our-programs__item-content">
               <h4>Polishing</h4>
@@ -136,7 +145,8 @@
             </div>
           </li>
 
-          <li class="our-programs__item">
+          <li class="our-programs__item"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
             <img src="assets/practical4.jpg" alt="">
             <div class="our-programs__item-content">
               <h4>License Acquisition</h4>
@@ -455,6 +465,10 @@
       src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js">
     </script>
 
+    <!-- AOS script _________________________________-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 
+    <!-- Custom js scripts __________________________-->
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
   </body>
