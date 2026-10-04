@@ -52,7 +52,7 @@
           </p>
           <div class="hero__cta">
             <a href="contact.html" class="btn btn-primary">Get Statrted</a>
-            <a href="programs.html" class="btn">Get Statrted</a>
+            <a href="programs.html" class="btn">See Programs</a>
           </div>
         </article>
 
@@ -241,19 +241,25 @@
 
         <menu class="packages__buttons">
           <button class="non-students active">Non Students</button>
-          <button class="-students">Students</button>
+          <button class="students">Students</button>
           <button class="license">License</button>
         </menu>
         <table>
           <thead>
             <tr>
-              <th>Packages</th>
+              <th>Package</th>
               <th>Duraction</th>
               <th>Price (&euro;)</th>
             </tr>
           </thead>
 
-          <tbody>
+          <tbody class="table-body">
+            <tr>
+              <td>Regular without license</td>
+              <td>6 weeks</td>
+              <td>2,650</td>
+            </tr>
+
             <tr>
               <td>Regular with standard license</td>
               <td>6 weeks</td>
@@ -297,7 +303,7 @@
             </tr>
 
             <tr>
-              <td>Polishing with standard license</td>
+              <td>Polishing with premium license</td>
               <td>3 weeks</td>
               <td>2,140</td>
             </tr>
@@ -307,7 +313,7 @@
     </section>
 
     <!-- Testimonials -->
-     <section class="testimonials">
+    <section class="testimonials">
       <div class="container">
         <header class="section-header">
           <h4>What our students say</h4>
@@ -332,7 +338,7 @@
                 </div>
               </div>
             </article>
-  
+
             <article class="swiper-slide">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                 elit. Dolore in repellendus consequuntur repudiandae 
@@ -341,7 +347,7 @@
               </p>
               <div class="testimonial__client">
                 <div class="testimonial__client-image">
-                  <img src="/assets/candidate1.jpg" alt="">
+                  <img src="/assets/candidate2.jpg" alt="">
                 </div>
                 <div class="testimonial__client-info">
                   <h5>Ernest Aciver</h5>
@@ -349,7 +355,7 @@
                 </div>
               </div>
             </article>
-  
+
             <article class="swiper-slide">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                 elit. Dolore in repellendus consequuntur repudiandae 
@@ -358,7 +364,7 @@
               </p>
               <div class="testimonial__client">
                 <div class="testimonial__client-image">
-                  <img src="/assets/candidate1.jpg" alt="">
+                  <img src="/assets/candidate3.jpg" alt="">
                 </div>
                 <div class="testimonial__client-info">
                   <h5>Ernest Aciver</h5>
@@ -366,7 +372,7 @@
                 </div>
               </div>
             </article>
-  
+
             <article class="swiper-slide">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                 elit. Dolore in repellendus consequuntur repudiandae 
@@ -375,7 +381,7 @@
               </p>
               <div class="testimonial__client">
                 <div class="testimonial__client-image">
-                  <img src="/assets/candidate1.jpg" alt="">
+                  <img src="/assets/candidate4.jpg" alt="">
                 </div>
                 <div class="testimonial__client-info">
                   <h5>Ernest Aciver</h5>
@@ -383,7 +389,7 @@
                 </div>
               </div>
             </article>
-  
+
             <article class="swiper-slide">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                 elit. Dolore in repellendus consequuntur repudiandae 
@@ -392,7 +398,7 @@
               </p>
               <div class="testimonial__client">
                 <div class="testimonial__client-image">
-                  <img src="/assets/candidate1.jpg" alt="">
+                  <img src="/assets/candidate5.jpg" alt="">
                 </div>
                 <div class="testimonial__client-info">
                   <h5>Ernest Aciver</h5>
@@ -400,7 +406,7 @@
                 </div>
               </div>
             </article>
-  
+
             <article class="swiper-slide">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
                 elit. Dolore in repellendus consequuntur repudiandae 
@@ -409,7 +415,7 @@
               </p>
               <div class="testimonial__client">
                 <div class="testimonial__client-image">
-                  <img src="/assets/candidate1.jpg" alt="">
+                  <img src="/assets/candidate6.jpg" alt="">
                 </div>
                 <div class="testimonial__client-info">
                   <h5>Ernest Aciver</h5>
@@ -422,10 +428,10 @@
         </div>
 
       </div>
-     </section>
+    </section>
 
-     <!-- footer -->
-     <footer>
+    <!-- footer -->
+    <footer>
       <div class="container">
         <menu class="footer__menu">
           <a href="#">Privacy</a>
@@ -441,30 +447,15 @@
       <small class="footer__copyright">
         &copy; 2026 Tutorials. All Rights reserved.
       </small>
-     </footer>
+    </footer>
 
 
 
-     <script 
+    <script 
       src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js">
     </script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
-        slidesPerView: 1,
-        spaceBetween: 50,
-        breakpoints: {
-          599: {
-            slidesPerView: 3
-          }
-        }
-      });
-    </script>
     <script src="/js/main.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
